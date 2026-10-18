@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" role="img" aria-labelledby="titulo desc">
+  <title id="titulo">El commit de merge une las dos ramas</title>
+  <desc id="desc">Las ramas main y cambiar-saludo se separaron en da84d36. El commit de merge f3ea06d, en main, une 588a4e8 y b672e86, con el saludo combinado "Buenos días, te damos la bienvenida". Estás en main.</desc>
+  <style>
+    .t{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .hash{font-size:13px;fill:#6b7280}
+    .msg{font-size:13px;fill:#1f2937}
+    .tag{font-size:13px;font-weight:600;fill:#fff}
+    .here{font-size:13px;fill:#6b7280;font-style:italic}
+    .old{font-size:12px;fill:#9ca3af}
+  </style>
+  <rect x="0.5" y="0.5" width="879" height="249" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+
+  <!-- historial anterior -->
+  <line x1="40" y1="170" x2="216" y2="170" stroke="#d1d5db" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <text class="t old" x="120" y="204" text-anchor="middle">commits anteriores</text>
+
+  <!-- líneas -->
+  <line x1="244" y1="170" x2="646" y2="170" stroke="#2563eb" stroke-width="4"/>
+  <path d="M230 156 Q230 80 300 80 L386 80" fill="none" stroke="#ea580c" stroke-width="4"/>
+  <path d="M414 80 L590 80 Q660 80 660 156" fill="none" stroke="#ea580c" stroke-width="4"/>
+
+  <!-- punto de partida común -->
+  <circle cx="230" cy="170" r="14" fill="#2563eb" stroke="#ffffff" stroke-width="3"/>
+  <text class="mono hash" x="230" y="204" text-anchor="middle">da84d36</text>
+
+  <!-- rama cambiar-saludo -->
+  <circle cx="400" cy="80" r="14" fill="#ea580c" stroke="#ffffff" stroke-width="3"/>
+  <text class="mono hash" x="400" y="114" text-anchor="middle">b672e86</text>
+  <text class="t msg" x="400" y="134" text-anchor="middle">“Hola, te damos la bienvenida”</text>
+  <rect x="336" y="40" width="128" height="24" rx="12" fill="#ea580c"/>
+  <text class="t tag" x="400" y="57" text-anchor="middle">cambiar-saludo</text>
+
+  <!-- main -->
+  <circle cx="400" cy="170" r="14" fill="#2563eb" stroke="#ffffff" stroke-width="3"/>
+  <text class="mono hash" x="400" y="204" text-anchor="middle">588a4e8</text>
+  <text class="t msg" x="400" y="226" text-anchor="middle">“Buenos días, mundo”</text>
+
+  <!-- commit de merge -->
+  <circle cx="660" cy="170" r="14" fill="#2563eb" stroke="#ffffff" stroke-width="3"/>
+  <text class="mono hash" x="660" y="204" text-anchor="middle">f3ea06d</text>
+  <text class="t msg" x="660" y="226" text-anchor="middle">“Buenos días, te damos la bienvenida”</text>
+  <rect x="688" y="158" width="56" height="24" rx="12" fill="#2563eb"/>
+  <text class="t tag" x="716" y="175" text-anchor="middle">main</text>
+  <text class="t here" x="756" y="175">← estás aquí</text>
+</svg>

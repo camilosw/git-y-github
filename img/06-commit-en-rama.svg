@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="230" viewBox="0 0 720 230" role="img" aria-labelledby="titulo desc">
+  <title id="titulo">Un commit en la rama agregar-archivo</title>
+  <desc id="desc">La rama main se queda en el commit e0b6e16. La rama agregar-archivo sale de ahí y tiene un commit más, da84d36, que agrega nuevo.php. Estás en agregar-archivo.</desc>
+  <style>
+    .t{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .hash{font-size:13px;fill:#6b7280}
+    .msg{font-size:13px;fill:#1f2937}
+    .tag{font-size:13px;font-weight:600;fill:#fff}
+    .here{font-size:13px;fill:#6b7280;font-style:italic}
+    .old{font-size:12px;fill:#9ca3af}
+  </style>
+  <rect x="0.5" y="0.5" width="719" height="229" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+
+  <!-- historial anterior -->
+  <line x1="40" y1="160" x2="206" y2="160" stroke="#d1d5db" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <text class="t old" x="110" y="194" text-anchor="middle">commits anteriores</text>
+
+  <!-- rama agregar-archivo -->
+  <path d="M220 146 Q220 80 290 80 L386 80" fill="none" stroke="#ea580c" stroke-width="4"/>
+
+  <!-- main -->
+  <circle cx="220" cy="160" r="14" fill="#2563eb" stroke="#ffffff" stroke-width="3"/>
+  <text class="mono hash" x="220" y="194" text-anchor="middle">e0b6e16</text>
+  <rect x="248" y="148" width="56" height="24" rx="12" fill="#2563eb"/>
+  <text class="t tag" x="276" y="165" text-anchor="middle">main</text>
+
+  <!-- commit de la rama -->
+  <circle cx="400" cy="80" r="14" fill="#ea580c" stroke="#ffffff" stroke-width="3"/>
+  <text class="mono hash" x="400" y="114" text-anchor="middle">da84d36</text>
+  <text class="t msg" x="400" y="50" text-anchor="middle">+ nuevo.php</text>
+  <rect x="428" y="68" width="140" height="24" rx="12" fill="#ea580c"/>
+  <text class="t tag" x="498" y="85" text-anchor="middle">agregar-archivo</text>
+  <text class="t here" x="580" y="85">← estás aquí</text>
+</svg>

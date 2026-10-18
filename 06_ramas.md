@@ -89,7 +89,9 @@ git commit -m "Agrega archivo nuevo.php desde la rama"
  create mode 100644 nuevo.php
 ```
 
-Fíjate que entre corchetes ahora dice `agregar-archivo` y no `main`. Este commit solo existe en esta rama.
+Fíjate que entre corchetes ahora dice `agregar-archivo` y no `main`. Este commit solo existe en esta rama:
+
+![La rama main se queda en el commit e0b6e16 y la rama agregar-archivo tiene un commit más, da84d36, con nuevo.php](img/06-commit-en-rama.svg)
 
 ## Volver a main
 
@@ -142,6 +144,8 @@ Fast-forward
 
 "Fast-forward" quiere decir que `main` no había cambiado desde que creaste la rama, así que Git solo tuvo que adelantar `main` hasta el último commit de la rama.
 
+![Antes del merge, main está en e0b6e16 y agregar-archivo en da84d36. Después, main avanzó hasta da84d36 sin crear ningún commit nuevo](img/06-fast-forward.svg)
+
 ```bash
 ls
 ```
@@ -192,7 +196,9 @@ git add hola.php
 git commit -m "Cambia el saludo por buenos días"
 ```
 
-Ahora cada rama tiene un commit que la otra no tiene, y los dos tocan la misma línea.
+Ahora cada rama tiene un commit que la otra no tiene, y los dos tocan la misma línea:
+
+![Desde da84d36 el historial se separa: cambiar-saludo tiene el commit b672e86 con "Hola, te damos la bienvenida" y main tiene el commit 588a4e8 con "Buenos días, mundo"](img/06-ramas-separadas.svg)
 
 **3. Intenta unir la rama:**
 
@@ -307,6 +313,10 @@ git log --oneline --graph -5
 * da84d36 Agrega archivo nuevo.php desde la rama
 * e0b6e16 Revert "Agrega aviso de mantenimiento"
 ```
+
+Es el mismo historial que este dibujo, pero `git log` lo muestra de abajo (lo más antiguo) hacia arriba (lo más reciente):
+
+![El commit de merge f3ea06d une 588a4e8 de main y b672e86 de cambiar-saludo, con el saludo "Buenos días, te damos la bienvenida"](img/06-commit-de-merge.svg)
 
 Las dos líneas de trabajo se separan y vuelven a juntarse en el commit de merge. Ya puedes borrar la rama:
 
